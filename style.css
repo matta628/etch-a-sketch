@@ -1,7 +1,21 @@
 body {
     background-color :blueviolet;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    gap: 15px;
+}
+#slider{
+    width: 25%;
+    accent-color: goldenrod;
+}
+#text-input{
+    font-size: 25px;
+    background-color: black;
+    border: 5px solid goldenrod;
+    border-radius: 10px;
+    color: goldenrod;
+    font-weight: 700;
 }
