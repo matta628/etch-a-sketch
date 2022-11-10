@@ -1,6 +1,7 @@
 const container = document.querySelector('.container');
 container.style.display = "flex";
 container.style.flexDirection = "column";
+container.style.backgroundColor = "black";
 container.style.border = "50px solid goldenrod";
 container.style.borderRadius = "50px";
 
@@ -24,6 +25,7 @@ function drawGrid(n){
             element.style.width = `${totalLen/n}px`;
             element.style.height = `${totalLen/n}px`;
             element.style.backgroundColor = "#FAF9F6";
+            element.style.opacity = "1"
             element.style.border = ".5px solid black";
             rowDiv.appendChild(element);
         }
@@ -33,7 +35,7 @@ function drawGrid(n){
     const cells = document.querySelectorAll('.cell');
     cells.forEach(cell => {
     cell.addEventListener('mouseover', () => {
-        cell.style.backgroundColor = 'gray';
+        cell.style.opacity = (cell.style.opacity - .1).toString();
     });
 })
 

@@ -19,3 +19,7 @@ body {
     color: goldenrod;
     font-weight: 700;
 }
+
+.cell {
+    opacity: 1;
+}
