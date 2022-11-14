@@ -4,6 +4,7 @@ container.style.flexDirection = "column";
 container.style.backgroundColor = "black";
 container.style.border = "50px solid goldenrod";
 container.style.borderRadius = "50px";
+container.style.marginTop = "30px"
 
 function clearGrid(parent){
     while (parent.lastElementChild){

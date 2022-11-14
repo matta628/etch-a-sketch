@@ -8,7 +8,7 @@ body {
     gap: 15px;
 }
 #slider{
-    width: 25%;
+    width: 200px;
     accent-color: goldenrod;
 }
 #text-input{
