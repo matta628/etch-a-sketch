@@ -39,7 +39,7 @@ function drawGrid(n){
             element.style.height = `${totalLen/n}px`;
             element.style.backgroundColor = "#FAF9F6";
             element.style.opacity = "1"
-            element.style.border = ".5px solid black";
+            element.style.border = ".5px solid lightgray";
             rowDiv.appendChild(element);
         }
         etchContainer.appendChild(rowDiv);
