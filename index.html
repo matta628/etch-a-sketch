@@ -2,15 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <script src="etch.js" defer></script>
+   <link rel="stylesheet" href="style.css"> 
+  <script src="etch.js" defer></script>
   </head>
   <body>
-    <div class="container"></div>
-    <div class="dimension-container">
-      <input type="range" id="slider" min="2" max="100" value="16" step="1" oninput="this.nextElementSibling.value = this.value">
-      <input type="number" id="text-input" min="2" max="100" value="16" step="1" oninput="this.previousElementSibling.value=this.value">
+    <div class="container">
+      <div class="dimension-container">
+        <input type="range" id="slider" min="2" max="100" value="16" step="1" oninput="this.nextElementSibling.value = this.value">
+        <input type="number" id="text-input" min="2" max="100" value="16" step="1" oninput="this.previousElementSibling.value=this.value">
+      </div>
+      <div class="etch-container"></div>
+      <div class="buttons">
+        <div class="color-buttons">
+          <button id="black-button">Black</button>
+          <button id="rgb-button">RGB</button>
+        </div>
+        <button id="erase-button">Erase</button>
+      </div>
     </div>
+
 
   </body>
 

@@ -7,9 +7,26 @@ body {
     height: 100vh;
     gap: 15px;
 }
+.container {
+    background-color: goldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 750px;
+    height: 750px;
+    gap: 15px;
+}
+.buttons {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
 #slider{
     width: 200px;
-    accent-color: goldenrod;
+    accent-color: blueviolet;
+    fill: black;
 }
 #text-input{
     font-size: 25px;
@@ -18,5 +35,14 @@ body {
     border-radius: 10px;
     color: goldenrod;
     font-weight: 700;
+}
+button {
+    font-size: 25px;    
+    font-weight: 700;
+    border-radius: 10px;
+}
+#erase-button{
+    background-color: blueviolet;
+    color: goldenrod;
 }
 
