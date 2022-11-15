@@ -50,6 +50,9 @@ function drawGrid(n){
         cell.addEventListener('mouseover', () => {
             colorCell(cell);
         });
+        cell.addEventListener('click', () => {
+            colorCell(cell);
+        })
     });
 }
 drawGrid(n);
