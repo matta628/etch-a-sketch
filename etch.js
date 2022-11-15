@@ -12,6 +12,19 @@ function clearGrid(parent){
     }
 }
 
+let blackAndWhite = true;
+function colorCell(cell){
+    if (blackAndWhite){
+        cell.style.opacity = (cell.style.opacity - .1).toString();
+    }
+    else{
+        let red = Math.floor(Math.random() * 256);
+        let blue = Math.floor(Math.random() * 256);
+        let green = Math.floor(Math.random() * 256);
+        cell.style.backgroundColor = `rgb(${red}, ${blue}, ${green})`;
+    }
+}
+
 let totalLen = 500;
 let n = 16;
 function drawGrid(n){
@@ -35,7 +48,7 @@ function drawGrid(n){
     const cells = document.querySelectorAll('.cell');
     cells.forEach(cell => {
         cell.addEventListener('mouseover', () => {
-            cell.style.opacity = (cell.style.opacity - .1).toString();
+            colorCell(cell);
         });
     });
 }
@@ -55,7 +68,23 @@ dimension.onchange = function () {
     this.previousElementSibling.value = this.value;
 }
 
-const erase = document.querySelector('#erase-button');
-erase.addEventListener('click', () => {
+const eraseButton = document.querySelector('#erase-button');
+eraseButton.addEventListener('click', () => {
     drawGrid(n);
+});
+
+const blackButton = document.querySelector('#black-button');
+blackButton.addEventListener('click', () => {
+    if (!blackAndWhite) {
+        drawGrid(n);
+        blackAndWhite = true;
+    }
+
+});
+const rgbButton = document.querySelector('#rgb-button');
+rgbButton.addEventListener('click', () => {
+    if (blackAndWhite){
+        drawGrid(n);
+        blackAndWhite = false;
+    }
 });

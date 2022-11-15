@@ -40,9 +40,24 @@ button {
     font-size: 25px;    
     font-weight: 700;
     border-radius: 10px;
+    background-color:black;
+
+
+}
+#r {
+    color: red;
+}
+#g {
+    color: green;
+}
+#b {
+    color: blue;
+}
+#black-button {
+    color: gray;
 }
 #erase-button{
-    background-color: blueviolet;
     color: goldenrod;
 }
+
 
