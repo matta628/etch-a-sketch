@@ -7,6 +7,12 @@ body {
     height: 100vh;
     gap: 15px;
 }
+.title {
+    font-size: 75px;
+    color: goldenrod;
+    font-weight: 700;
+    font-family: cursive;
+}
 .container {
     background-color: goldenrod;
     display: flex;
